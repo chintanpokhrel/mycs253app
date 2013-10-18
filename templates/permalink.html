@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{post.render() | safe}}
+  <br><br>
+  This page was queried {{querytime}} seconds ago.
+{% endblock %}

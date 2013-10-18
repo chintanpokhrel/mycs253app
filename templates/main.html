@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %}
+<br><br>
+<div class="fb-like" data-href="http://mycs253app.appspot.com/blog" data-send="true" data-width="450" data-show-faces="true">
+</div>
+<br><br>
+
+<div class="page_no">
+<a href = '/{{next_page_no}}'>
+	Page {{next_page_no}}
+</a>
+<br><br>
+</div>
+<div class="age">
+  This page was queried {{querytime}} seconds ago.
+</div>
+
+{% endblock %}

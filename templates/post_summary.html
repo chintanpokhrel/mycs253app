@@ -1,0 +1,15 @@
+<div class = "post-heading" >
+<input type="hidden" name="key" value="{{ p.key().id() }}" >
+		<table>
+		<tr>
+			<td>
+			<a href = "/blog/{{p.key().id()}}" >
+			{{ p.subject }}
+			</a>
+			</td>
+			<td>
+			{{ p.posted.strftime("%b %d, %Y") }}
+			</td>
+		</tr>
+		</table>
+</div>
