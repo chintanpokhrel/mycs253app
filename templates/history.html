@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<form method = "post" >
+<form method ="post" >
 	{% for p in posts %}
 		p.render_summary() | safe
 		<br> <br>
